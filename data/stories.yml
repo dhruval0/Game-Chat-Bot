@@ -1,0 +1,16 @@
+version: "3.1"
+
+stories:
+
+- story: play rock paper scissors
+  steps:
+  - intent: greet
+  - action: utter_play
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
