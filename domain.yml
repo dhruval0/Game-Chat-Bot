@@ -22,8 +22,6 @@ slots:
     - type: from_entity
       entity: choice
 
-
-
 responses:
   utter_play:
   - text: "Type 'rock', 'paper' or 'scissors' to play." 
@@ -31,17 +29,11 @@ responses:
   utter_play_again:
   - text: "Do you want to play again?"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
   utter_goodbye:
   - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "I am a bot, powered by Dhruval."
 
 actions:
   - action_play_rps

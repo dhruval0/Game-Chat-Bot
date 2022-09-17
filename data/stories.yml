@@ -6,11 +6,18 @@ stories:
   steps:
   - intent: greet
   - action: utter_play
-  - intent: mood_great
-  - action: utter_happy
+  - intent: inform
+  - action: action_play_rps
+  - action: utter_play_again
 
-- story: sad path 1
+- story: play again
   steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
+  - action: utter_play_again
+  - intent: affirm
+  - action: utter_play
+
+- story: don't play again
+  steps:
+  - action: utter_play_again
+  - intent: deny
+  - action: utter_goodbye
